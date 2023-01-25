@@ -1,7 +1,6 @@
 package com.edu.spring.demo;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 /*
@@ -15,7 +14,7 @@ By uncommenting @Scope, we will be able to create an object every time we call t
 public class Alien {
 
     private int aid;
-    private String aname;
+    private String name;
     private String tech;
 
     @Autowired
@@ -37,12 +36,12 @@ public class Alien {
         this.aid = aid;
     }
 
-    public String getAname() {
-        return aname;
+    public String getName() {
+        return name;
     }
 
-    public void setAname(String aname) {
-        this.aname = aname;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getTech() {
